@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <title>Product</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body class="bg-light">
@@ -23,24 +28,82 @@
             </div>
         </div>
     </nav>
-    <div>
-        <img src="logo-ead.png" width="500">
-        <h4>EAD Store merupakan toko elektronik yang menjual barang-barang sebagai berikut:</h4>
-        <ol>
-            <li>Komputer</li>
-            <li>Keyboard</li>
-            <li>Mouse</li>
-        </ol>
-        <h4>Merk yang tersedia di EAD Store antara lain:</h4>
-        <ul>
-            <li>HP</li>
-            <li>ASUS</li>
-            <li>Logitech</li>
-            <li>Dell</li>
-            <li>Lenovo</li>
-            <li>Apple</li>
-        </ul>
-    </div>
+
+    <h2 class="text-center py-4">Daftar Barang</h2>
+    <table class="table table-bordered w-75" style="margin: 0 auto;">
+        <tr class="text-center">
+            <th rowspan="2" class="bg-secondary">Ketersediaan Barang</th>
+            <th rowspan="2" class="bg-secondary">Nama Barang</th>
+            <th colspan="3" class="bg-secondary">Detail Barang</th>
+        </tr>
+
+        <tr>
+            <th class="text-center">Merk</th>
+            <th class="text-center">Jenis</th>
+            <th class="text-center">Harga</th>
+        </tr>
+        <tr>
+            <td rowspan="6" class="bg-secondary">Ready Stock</td>
+        </tr>
+
+        <tr class="bg-secondary">
+            <td>All-in-One 24-f0051d [3JV73AA]</td>
+            <td>HP</td>
+            <td>Komputer</td>
+            <td>Rp.11.358.000</td>
+        </tr>
+        <tr>
+            <td>All-in-One V222UAK-BA341T [90PT0261-M00240]</td>
+            <td>ASUS</td>
+            <td>Komputer</td>
+            <td>Rp.8.099.000</td>
+        </tr>
+        <tr class="bg-secondary">
+            <td>Bluetooth Multi-Device Keybooard K480 - Black [920-006380]</td>
+            <td>Logitech</td>
+            <td>Keyboard</td>
+            <td>Rp.470.000</td>
+        </tr>
+        <tr>
+            <td>Wireless Keyboard and Mouse KM636-Black</td>
+            <td>Dell</td>
+            <td>Keyboard</td>
+            <td>Rp.399.000</td>
+        </tr>
+        <tr class="bg-secondary">
+            <td>Wireless Mouse M238 Fan Collection - England [910-005407]</td>
+            <td>Logitech</td>
+            <td>Mouse</td>
+            <td>Rp.175.000</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Sold Out</td>
+        </tr>
+
+        <tr>
+            <td>All-in-One IdeaCentre AIO520-22IKL [F0D4005MID]</td>
+            <td>Lenovo</td>
+            <td>Komputer</td>
+            <td>Rp.10.850.000</td>
+        </tr>
+
+        <tr class="bg-secondary">
+            <td>M590 Multi Device Silent Wireless Mouse [910-005205]</td>
+            <td>Logitech</td>
+            <td>Mouse</td>
+            <td>Rp.394.000</td>
+        </tr>
+
+        <tr>
+            <td>Smart Keyboard iPad Pro 10.5 Inch [MPTL2ZA/A]</td>
+            <td>Apple</td>
+            <td>Keyboard</td>
+            <td>Rp.3.000.800</td>
+        </tr>
+    </table>
+
+
 </body>
 
 </html>
