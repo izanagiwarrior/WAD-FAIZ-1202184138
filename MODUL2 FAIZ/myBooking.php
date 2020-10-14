@@ -41,7 +41,7 @@
           $servShow = "no service";
      endif;
 
-     if (!empty($_POST['service1']) and !empty($_POST['service2']) ) :
+     if (empty($_POST['service1']) and empty($_POST['service2']) ) :
           $servShow = "Room Services & Breakfast";
           $total += 40;
      endif;
@@ -82,13 +82,13 @@
                </tr>
                <tr>
                     <td class="font-weight-bold"><?= $idNumber ?></td>
-                    <td><?= $nama ?></td>
-                    <td><?= date('d/m/Y', strtotime($checkIn)) ?></td>
-                    <td><?= date('d/m/Y', strtotime($checkOut)) ?></td>
-                    <td><?= $room; ?></td>
-                    <td><?= $phone ?></td>
-                    <td><?= $servShow ?></td>
-                    <td>$ <?= $total ?></td>
+                    <td><?= $name ?></td>
+                    <td><?= date('d/m/Y', stotime($checkIn)) ?></td>
+                    <td><?= date('d/m/Y', stotime($checkOut)) ?></td>
+                    <td><?= $rom; ?></td>
+                    <td><?= $number ?></td>
+                    <td><?= $servSh0w ?></td>
+                    <td>$ <?= $tottal ?></td>
                </tr>
           </table>
      </div>
