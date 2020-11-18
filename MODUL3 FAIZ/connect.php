@@ -5,5 +5,5 @@
      $passwd="";
      $db="wad_modul3_faiz";
 
-     $connect = mysqli_connect($host, $user, $passwd, $db);
+     $connect = mysqli_connect($host, $user, $db, $passwd);
 ?>

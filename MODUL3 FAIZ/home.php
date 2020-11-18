@@ -33,7 +33,7 @@
                <?php
           include "connect.php";
           $show = "SELECT * FROM event_table";
-          $query = mysqli_query($connect, $show);
+          $query = mysqli_query($connect);
           $row = mysqli_num_rows($query);
 
           if($row == 0){

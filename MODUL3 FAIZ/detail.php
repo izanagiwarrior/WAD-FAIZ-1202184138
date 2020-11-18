@@ -15,11 +15,10 @@
 
 <body>
      <?php
-     include 'connect.php';
      $id = $_GET['id'];
-     $query = "SELECT * FROM event_table WHERE id = '$id'";
+     $query = "SELECT * FROM event_table";
 
-     $detail = mysqli_query($connect, $query);
+     $detail = mysqli_query($connect);
      ?>
      <div class="navbar navbar-expand navbar-light bg-info d-flex justify-content-between">
           <div>
