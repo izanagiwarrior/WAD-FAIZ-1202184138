@@ -19,21 +19,9 @@
     ?>
     <style>
         .navbar-custom {
-            background-color: <?php foreach ($_COOKIE as $key => $val) {
-                                    echo $val;
-                                    $val2 = $val;
-                                    break;
-                                } ?>
+            background-color: <?php echo $_COOKIE["nav"]?>
         }
     </style>
-
-    <?php 
-    
-    // if(isset($val2)){
-    //     $val2 = '#FFFFFF';
-    // }
-
-    ?>
     <title>Profile</title>
 </head>
 
@@ -107,16 +95,16 @@
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Warna Navbar</label>
                                     <div class="col-sm-2">
                                         <select class="form-control" name="background_color" >
-                                            <option value="#FFFFFF"<?= $val2 == '#FFFFFF' ? 'selected="selected"' : ""; ?>>Light</option>
-                                            <option value='#000000'<?= $val2 == '#000000' ? 'selected="selected"' : ""; ?>>Dark</option>
-                                            <option value='#FFCD00'<?= $val2 == '#FFCD00' ? 'selected="selected"' : ""; ?>>Gold</option>
-                                            <option value='#0023FF'<?= $val2 == '#0023FF' ? 'selected="selected"' : ""; ?>>Blue</option>
-                                            <option value='#00FF04'<?= $val2 == '#00FF04' ? 'selected="selected"' : ""; ?>>Green</option>
-                                            <option value='#FF0000'<?= $val2 == '#FF0000' ? 'selected="selected"' : ""; ?>>Red</option>
-                                            <option value='#00FFF0'<?= $val2 == '#00FFF0' ? 'selected="selected"' : ""; ?>>Cyan</option>
-                                            <option value='#F7FF00'<?= $val2 == '#F7FF00' ? 'selected="selected"' : ""; ?>>Yellow</option>
-                                            <option value='#FF00F7'<?= $val2 == '#FF00F7' ? 'selected="selected"' : ""; ?>>Pink</option>
-                                            <option value='#C900FF'<?= $val2 == '#C900FF' ? 'selected="selected"' : ""; ?>>Purple</option>
+                                            <option value="#FFFFFF"<?= $_COOKIE["nav"] == '#FFFFFF' ? 'selected="selected"' : ""; ?>>Light</option>
+                                            <option value='#000000'<?= $_COOKIE["nav"] == '#000000' ? 'selected="selected"' : ""; ?>>Dark</option>
+                                            <option value='#FFCD00'<?= $_COOKIE["nav"] == '#FFCD00' ? 'selected="selected"' : ""; ?>>Gold</option>
+                                            <option value='#0023FF'<?= $_COOKIE["nav"] == '#0023FF' ? 'selected="selected"' : ""; ?>>Blue</option>
+                                            <option value='#00FF04'<?= $_COOKIE["nav"] == '#00FF04' ? 'selected="selected"' : ""; ?>>Green</option>
+                                            <option value='#FF0000'<?= $_COOKIE["nav"] == '#FF0000' ? 'selected="selected"' : ""; ?>>Red</option>
+                                            <option value='#00FFF0'<?= $_COOKIE["nav"] == '#00FFF0' ? 'selected="selected"' : ""; ?>>Cyan</option>
+                                            <option value='#F7FF00'<?= $_COOKIE["nav"] == '#F7FF00' ? 'selected="selected"' : ""; ?>>Yellow</option>
+                                            <option value='#FF00F7'<?= $_COOKIE["nav"] == '#FF00F7' ? 'selected="selected"' : ""; ?>>Pink</option>
+                                            <option value='#C900FF'<?= $_COOKIE["nav"] == '#C900FF' ? 'selected="selected"' : ""; ?>>Purple</option>
                                         </select>
                                     </div>
                                 </div>
