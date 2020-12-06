@@ -1,7 +1,7 @@
 <?php
 include 'connect.php';
 session_start();
-$id = $_SESSION['id'];
+$id = $_POST['id'];
 $barang = $_GET['barang'];
 if ($barang == "YUJA") :
    $harga = 169000;

@@ -24,7 +24,7 @@
 		return $query;
 	}
 
-	function showProfile($id){
+	function showProfile(){
 		$show = "SELECT * FROM user WHERE id = '$id'";
 		$query = mysqli_query($this->koneksi, $show);
 		return $query;
@@ -44,7 +44,7 @@
 		return $insert;
 	}
  
-	function login($email,$pass,$remember)
+	function login()
 	{
 		$query = mysqli_query($this->koneksi,"select * from user where email='$email'");
 		$data_user = $query->fetch_array();
@@ -59,10 +59,10 @@
 				setcookie('nama', $data_user['nama'], time() + (60 * 60 * 24 * 5), '/');
 				setcookie('id', $data_user['id'], time() + (60 * 60 * 24 * 5), '/');
 			}
-			$_SESSION['id'] = $id;
-			$_SESSION['pass'] = $pass;
-			$_SESSION['nama'] = $data_user['nama'];
-			$_SESSION['is_login'] = TRUE;
+			$_POST['id'] = $id;
+			$_POST['pass'] = $pass;
+			$_POST['nama'] = $data_user['nama'];
+			$_POST['is_login'] = TRUE;
 			return TRUE;
 		}
 	}
