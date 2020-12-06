@@ -29,13 +29,24 @@ class ProductController extends Controller
     public function orderEvent(Request $request)
     {
 
+
+        if ($files = $request->file('img_path')) {
+            $destinationPath = 'public/images/';
+            $file = $request->file('img_path');
+            // upload path         
+            $profileImage = rand(1000, 20000) . "." .
+                $files->getClientOriginalExtension();
+            $pathImg = $file->storeAs('images', $profileImage);
+            $files->move($destinationPath, $profileImage);
+        }
+
+
         $products = new Products();
         $products->name = $request->name;
         $products->price = $request->price;
         $products->description = $request->description;
         $products->stock = $request->stock;
-
-        $products->img_path = request()->file('img_path')->store('image');
+        $products->img_path = $pathImg;
         $products->save();
 
         return redirect(route('product'));
@@ -48,15 +59,25 @@ class ProductController extends Controller
         return view('content.updateEvent', compact('products'));
     }
 
-    public function updateEvent($id,Request $request)
+    public function updateEvent($id, Request $request)
     {
+
+        if ($files = $request->file('img_path')) {
+            $destinationPath = 'public/images/';
+            $file = $request->file('img_path');
+            // upload path         
+            $profileImage = rand(1000, 20000) . "." .
+                $files->getClientOriginalExtension();
+            $pathImg = $file->storeAs('images', $profileImage);
+            $files->move($destinationPath, $profileImage);
+        }
+
         $products = Products::find($id);
         $products->name = $request->name;
         $products->price = $request->price;
         $products->description = $request->description;
         $products->stock = $request->stock;
-
-        $products->img_path = request()->file('img_path')->store('image');
+        $products->img_path = request()->$pathImg;
         $products->save();
 
         return redirect(route('product'));
@@ -103,10 +124,4 @@ class ProductController extends Controller
 
         return view('content.history', compact('orders'), compact('products'));
     }
-
-
-
-
-
-
 }

@@ -30,7 +30,7 @@
                                     {{-- <img src="storage/image/p1Fczj6eHqNMtPcxtLiDKrTMz4vdfLgefP0xBYn5.png" /> --}}
                                     {{-- <p>{{ $product->img_path }}</p> --}}
 
-                                    <img src="https://storeximi.online/wp-content/uploads/2020/11/cropped-Logo-1.png" height="225">
+                                    <img src="{{ asset('public/'.$product->img_path) }}" height="225">
                                     <div class="card-body">
                                         <h6 class="card-title">{{ $product->name }}</h6>
                                         <p class="card-text">{{ $product->description }}</p>

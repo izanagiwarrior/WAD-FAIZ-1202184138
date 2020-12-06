@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Ximi Store</title>
-
+    <link rel = "icon" href =  
+    "https://storeximi.online/wp-content/uploads/2020/11/cropped-Logo-1.png" 
+            type = "image/x-icon"> 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     {{-- Style --}}
