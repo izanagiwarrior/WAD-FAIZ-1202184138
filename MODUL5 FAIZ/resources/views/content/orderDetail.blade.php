@@ -4,8 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="{{ $products->img_path }}"
-                    class="card-img-top" alt="...">
+                <img src="https://storeximi.online/wp-content/uploads/2020/11/cropped-Logo-1.png" height="400">
+                {{-- <img src="{{ $products->img_path }}"
+                    class="card-img-top" alt="..."> --}}
             </div>
             <div class="col">
                 <h1>{{ $products->name }}</h1>

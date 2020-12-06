@@ -2,6 +2,6 @@
 
 @section('content')
 
-<img src="https://static.republika.co.id/uploads/images/inpicture_slide/indomie-goreng-_160716190759-444.jpg" alt="" class="center">
+<img src="https://storeximi.online/wp-content/uploads/2020/11/cropped-Logo-1.png" alt="" class="center">
 
 @endsection
