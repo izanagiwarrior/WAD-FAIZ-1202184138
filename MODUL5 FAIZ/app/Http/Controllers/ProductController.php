@@ -55,7 +55,8 @@ class ProductController extends Controller
         $products->price = $request->price;
         $products->description = $request->description;
         $products->stock = $request->stock;
-        $products->img_path = $request->img_path;
+
+        $products->img_path = request()->file('img_path')->store('image');
         $products->save();
 
         return redirect(route('product'));

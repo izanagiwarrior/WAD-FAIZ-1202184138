@@ -24,9 +24,16 @@
             @foreach ($orders as $index => $order)
             <tr>
                 <td>{{ $i += 1 }}</td>
+
                 @foreach ($products as $ps)
-                <td>{{ $ps->name }}</td>
+                @if ($ps->id === $order->product_id)
+                
+                    <td>{{ $ps->name }}</td>
+
+                @endif
+                
                 @endforeach
+
                 <td>{{ $order->buyer_name }}</td>
                 <td>{{ $order->buyer_contact }}</td>
                 <td>{{ $order->amount }}</td>
