@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2020 at 11:50 AM
+-- Generation Time: Dec 06, 2020 at 01:12 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -61,9 +61,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `product_id`, `amount`, `buyer_name`, `buyer_contact`, `created_at`, `updated_at`) VALUES
-(3, 25, 10000, 'M. Faiz Triputra', '082189100482', '2020-12-06 03:22:03', '2020-12-06 03:22:03'),
-(4, 25, 1000, 'awdawdwadawd', '082189100482', '2020-12-06 03:22:22', '2020-12-06 03:22:22'),
-(5, 26, 10000, 'M. Faiz Triputra', '082189100482', '2020-12-06 03:41:32', '2020-12-06 03:41:32');
+(8, 29, 5, 'M. Faiz Triputra', '082189100482', '2020-12-06 05:08:30', '2020-12-06 05:08:30');
 
 -- --------------------------------------------------------
 
@@ -87,8 +85,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `price`, `description`, `stock`, `img_path`, `created_at`, `updated_at`) VALUES
-(25, 'Lol', 200, 'awdawd awdaw dawd awd a', 20, 'C:\\xampp\\tmp\\phpA7F6.tmp', '2020-12-06 01:10:24', '2020-12-06 03:23:41'),
-(26, 'Mie Ayam', 2000, 'Mia Ayam Goreng', 123123, 'image/bemhe4v0DETm54P5IdCYVpiQ1Cf5uijn3Ye83QO1.png', '2020-12-06 03:35:46', '2020-12-06 03:35:46');
+(29, 'Mie Goreng', 1, 'Sebuah Mie Goreng yang sangat biasa', 10, 'images/13109.jfif', '2020-12-06 05:06:47', '2020-12-06 05:06:47');
 
 --
 -- Indexes for dumped tables
@@ -127,13 +124,13 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- Constraints for dumped tables
