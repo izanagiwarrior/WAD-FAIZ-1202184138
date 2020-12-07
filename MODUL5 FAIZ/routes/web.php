@@ -29,7 +29,7 @@ Route::post('/orderEvent', [ProductController::class, 'orderEvent'])->name('orde
 
 Route::get('/updateEvent/{id}', [ProductController::class, 'update'])->name('content.updateEvent');
 
-Route::post('/updateEvent/{id}', [ProductController::class, 'updateEvent'])->name('updateEvent');
+Route::post('/updateEvent', [ProductController::class, 'updateEvent'])->name('updateEvent');
 
 Route::post('/delete', [ProductController::class, 'delete'])->name('content.deleteEvent');
 
@@ -39,7 +39,7 @@ Route::get('/orderDetail/{id}', [ProductController::class, 'addDetail'])->name('
 
 Route::post('/orderDetail', [ProductController::class, 'orderDetail'])->name('orderDetail');
 
-Route::get('/history', [ProductController::class, 'history'])->name('history');
+Route::get('/history/{id}', [ProductController::class, 'history'])->name('history');
 
 // Route::get('/orderEvent', [ProductController::class, 'addProduct']);
 
