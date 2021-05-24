@@ -17,6 +17,8 @@
      <?php
      include 'connect.php';
      $id = $_GET['id'];
+     $query = "SELECT * FROM event_table WHERE id = '$id'";
+
      $detail = mysqli_query($connect, $query);
      ?>
      <div class="navbar navbar-expand navbar-light bg-info d-flex justify-content-between">

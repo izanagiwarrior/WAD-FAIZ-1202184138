@@ -105,7 +105,7 @@ class ProductController extends Controller
         return view('content.orderDetail', compact('products'));
     }
 
-    public function orderDetail()
+    public function orderDetail(Request $request)
     {
         $orders = new Orders();
         $orders->product_id = $request->prodID;

@@ -1,4 +1,6 @@
 <?php
+     include 'connect.php';
+
      $nama = $_POST['name'];
      $deskripsi = $_POST['deskripsi'];
      $kategori = $_POST['kategori'];

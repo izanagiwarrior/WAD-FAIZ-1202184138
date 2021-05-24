@@ -44,7 +44,7 @@
      <div class="container d-flex justify-content-center p-4">
           <div class="row">
                <div class="col-sm-6 mr-3">
-                    <form action="myBooking.php" method="GET">
+                    <form action="myBooking.php" method="POST">
                          <div class="form-group">
                               <label for="nama">Name</label>
                               <input type="text" class="form-control" name="nama">
@@ -74,7 +74,7 @@
                                    </select>
 
                               <?php else : ?>
-                                   <input type="text" class="form-control"  >
+                                   <input type="text" class="form-control" value=<?= $_GET['room'] ?> name="room" src readonly>
                               <?php endif; ?>
                          </div>
 
@@ -99,7 +99,7 @@
                               <label for="nomorhp">Phone Number</label>
                               <input type="text" class="form-control" name="nomor">
                          </div>
-                         <button class="btn btn-block btn-primary" type="button" value="kirim">Book</button>
+                         <button class="btn btn-block btn-primary" type="submit" value="kirim">Book</button>
                     </form>
                </div>
                <div class="col-sm-4">

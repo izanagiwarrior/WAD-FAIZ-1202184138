@@ -32,7 +32,10 @@
           <div class="row d-flex flex-row">
                <?php
           include "connect.php";
+          $show = "SELECT * FROM event_table";
+          $query = mysqli_query($connect, $show);
           $row = mysqli_num_rows($query);
+
           if($row == 0){
                echo 'No Events Found';
           }

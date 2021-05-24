@@ -1,5 +1,7 @@
 <?php
-   $nama = $_POST['name'];
+     include 'connect.php';
+
+     $nama = $_POST['name'];
      $deskripsi = $_POST['deskripsi'];
      $kategori = $_POST['kategori'];
      $tanggal= $_POST['tanggal'];

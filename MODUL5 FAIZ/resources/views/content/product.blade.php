@@ -26,7 +26,7 @@
                 <th>Action</th>
             </tr>
 
-            @foreach ($products)
+            @foreach ($products as $index => $product)
 
                 <tr>
                     <td>{{ $i += 1 }}</td>

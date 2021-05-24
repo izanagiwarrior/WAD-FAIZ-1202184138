@@ -38,35 +38,147 @@
           </div>
      </div>
 
-     <div class="container mt-3 d-flex justify-content-center">
+     <div class="container mt-3">
+          <h3 class="text-info py-2">Buat Event</h3>
           <form action="createEvent.php" method="post" enctype="multipart/form-data">
                <div class="row">
-                    <div class="col">
-                         <div class="card">
+                    <div class="col px-3">
+                         <div class="card pb-5">
+                              <div class="card-header bg-danger"></div>
                               <div class="card-body">
-                                   <h1 class="mt-4 text-center">Registrasi</h1><br>
-                                   <div class="form-group mt-4">
-                                        <label for="exampleInputEmail1">Nama</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama" required size="43px">
-                                   </div>
                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">E-mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required size="43px">
+                                        <label><b>Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Masukkan Nama" name="name">
                                    </div>
-                                   <div class="form-group">
-                                        <label for="exampleInputEmail1">No. Handphone</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone" required size="43px">
+                                   <div class="form-group my-2">
+                                        <label><b>Deskripsi</b></label>
+                                        <textarea class="form-control" rows="3" cols="30" name="deskripsi"></textarea>
                                    </div>
-                                   <div class="form-group">
-                                        <label for="exampleInputPassword1">Kata Sandi</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" name="pass" required size="43px">
+                                   <label><b>Upload Gambar</b></label>
+                                   <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name="gambar">
+                                        <label class="custom-file-label">Pilih File</label>
                                    </div>
-                                   <div class="form-group">
-                                        <label for="exampleInputPassword1">Konfirmasi Kata Sandi</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" name="k-pass" required size="43px">
+
+                                   <div class="form-group mb-1">
+                                        <label><b>Kategori</b></label>
                                    </div>
-                                   <button type="submit" class="btn btn-primary">Daftar</button>
-                                   <p>Sudah punya akun?<a href="#">Login</a></p>
+                                   <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="kategori" value="Online">
+                                        <label class="form-check-label"><b>Online</b></label>
+                                   </div>
+                                   <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="kategori" id="inlineRadio2" value="Offline">
+                                        <label class="form-check-label" for="inlineRadio2"><b>Offline</b></label>
+                                   </div>
+
+
+
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col px-3">
+                         <div class="card">
+                              <div class="card-header bg-primary"></div>
+                              <div class="card-body">
+                                   <div class="form-group mb-2">
+                                        <label><b>Tanggal</b></label>
+                                        <input type="date" class="form-control" name="tanggal">
+                                   </div>
+                                   <div class="form-row">
+
+                                        <div class="form-group col-md-6 my-1">
+                                             <label><b>Jam Mulai</b></label>
+                                             <select class="form-control" name="mulai">
+                                                  <option>00:00</option>
+                                                  <option>01:00</option>
+                                                  <option>02:00</option>
+                                                  <option>03:00</option>
+                                                  <option>04:00</option>
+                                                  <option>05:00</option>
+                                                  <option>06:00</option>
+                                                  <option>07:00</option>
+                                                  <option>08:00</option>
+                                                  <option>09:00</option>
+                                                  <option>11:00</option>
+                                                  <option>12:00</option>
+                                                  <option>13:00</option>
+                                                  <option>14:00</option>
+                                                  <option>15:00</option>
+                                                  <option>16:00</option>
+                                                  <option>17:00</option>
+                                                  <option>18:00</option>
+                                                  <option>19:00</option>
+                                                  <option>20:00</option>
+                                                  <option>21:00</option>
+                                                  <option>22:00</option>
+                                                  <option>23:00</option>
+                                                  <option>24:00</option>
+                                             </select>
+                                        </div>
+
+                                        <div class="form-group col-md-6 my-1">
+                                             <label><b>Jam Berakhir</b></label>
+                                             <select class="form-control" name="berakhir">
+                                                  <option>00:00</option>
+                                                  <option>01:00</option>
+                                                  <option>02:00</option>
+                                                  <option>03:00</option>
+                                                  <option>04:00</option>
+                                                  <option>05:00</option>
+                                                  <option>06:00</option>
+                                                  <option>07:00</option>
+                                                  <option>08:00</option>
+                                                  <option>09:00</option>
+                                                  <option>11:00</option>
+                                                  <option>12:00</option>
+                                                  <option>13:00</option>
+                                                  <option>14:00</option>
+                                                  <option>15:00</option>
+                                                  <option>16:00</option>
+                                                  <option>17:00</option>
+                                                  <option>18:00</option>
+                                                  <option>19:00</option>
+                                                  <option>20:00</option>
+                                                  <option>21:00</option>
+                                                  <option>22:00</option>
+                                                  <option>23:00</option>
+                                                  <option>24:00</option>
+                                             </select>
+                                        </div>
+                                   </div>
+
+                                   <div class="form-group my-1">
+                                        <label><b>Tempat</b></label>
+                                        <input type="text" class="form-control" placeholder="Masukkan Tempat" name="tempat">
+                                   </div>
+                                   <div class="form-group my-1">
+                                        <label><b>Harga</b></label>
+                                        <input type="text" class="form-control" placeholder="Masukkan Harga" name="harga">
+                                   </div>
+
+                                   <div class="form-group my-1">
+                                        <label><b>Benefit</b></label>
+                                   </div>
+                                   <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="benefit[]" value="Snacks">
+                                        <label class="form-check-label"><b>Snacks</b></label>
+                                   </div>
+                                   <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="benefit[]" value="Sertifikat">
+                                        <label class="form-check-label"><b>Sertifikat</b></label>
+                                   </div>
+                                   <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="benefit[]" id="inlineRadio2" value="Souvenir">
+                                        <label class="form-check-label"><b>Souvenir</b></label>
+                                   </div>
+
+                                   <div class="form-group d-flex justify-content-end my-1">
+                                        <button type="submit" class="btn btn-primary mx-3">Submit</button>
+                                        <button type="reset" class="btn btn-danger">Cancel</button>
+                                   </div>
+
+
                               </div>
                          </div>
                     </div>

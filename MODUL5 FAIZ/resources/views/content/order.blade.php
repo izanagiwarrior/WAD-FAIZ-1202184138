@@ -35,7 +35,7 @@
                                         <h6 class="card-title">{{ $product->name }}</h6>
                                         <p class="card-text">{{ $product->description }}</p>
                                         <h4 class="card-text">$ {{ $product->price }}.00</h4>
-                                        <div><a href="{{ route('orderDetail',$product->id) }}" class="btn bg-success text-white">Order Now</a>
+                                        <div><a href="{{ route('content.orderDetail',$product->id) }}" class="btn bg-success text-white">Order Now</a>
                                         </div>
                                     </div>
                                 </div>
